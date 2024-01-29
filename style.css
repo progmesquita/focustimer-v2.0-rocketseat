@@ -1,0 +1,96 @@
+/* Configurações padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #FFF;
+    --timer-color: #323238;
+    
+    --music-bg: #E1E1E6;
+    --music-bg-active: #02799D;
+    --music-icon-active: #FFF;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+
+    background-color: var(--bg-color);
+}
+
+body, button {
+    color: var(--timer-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Menu */
+#app {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    place-content: center;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    gap: 19.2rem;
+}
+
+#timer {
+    font-size: 12.6rem;
+    justify-content: center;
+    margin-bottom: 1.7rem;
+}
+
+#control {
+    gap: 4rem;
+}
+
+#control > button {
+    font-size: 5.5rem;
+    background: transparent;
+    border: 0;
+}
+
+#music-control {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 3.2rem;
+}
+
+#music-control > button {
+    width: 13.8rem;
+    height: 15.2rem;
+
+    border: none;
+    border-radius: 2.4rem;
+
+    background-color: var(--music-bg);
+    font-size: 5.8rem;
+
+    transition: filter .5s;
+}
+
+#music-control > button:hover {
+    filter: brightness(.9);
+}
+
+#music-control > .active {
+    background-color: var(--music-bg-active);
+    color: var(--music-icon-active);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focustimer 2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./src/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="content">
+            <div id="timer-container">
+                <div id="timer" class="flex">
+                    <span id="minutes">25</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                </div>
+    
+                <div id="control" class="flex">
+                    <button data-action="running" class="ph-bold ph-play-circle"></button>
+                    <button data-action="stop" class="ph-bold ph-stop-circle"></button>
+                    <button data-action="addMoreMinutes" class="ph-bold ph-plus-circle"></button>
+                    <button data-action="takeMoreMinutes" class="ph-bold ph-minus-circle"></button>
+                </div>
+            </div>
+    
+            <div id="music-control">
+                <button data-mode="leaf" class="ph-bold ph-leaf"></button>
+                <button data-mode="rain" class="ph-bold ph-cloud-snow"></button>
+                <button data-mode="coffe" class="ph-bold ph-storefront"></button>
+                <button data-mode="firePlace" class="ph-bold ph-fire"></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
